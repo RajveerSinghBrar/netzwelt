@@ -23,10 +23,6 @@ hooks:
     - location: scripts/application_stop.sh
       timeout: 60
       runas: root
-  BeforeInstall:
-    - location: before_install.sh
-      timeout: 300
-      runas: root
     - location: scripts/copy_files.sh
       timeout: 300
       runas: root
